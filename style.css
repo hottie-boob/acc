@@ -443,3 +443,30 @@ height:80px;
     background:#7593ff;
     transform:translateY(-2px);
 }
+
+.scroll-text {
+    width: 100%;
+    overflow: hidden;
+    background: red;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.scroll-content {
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
